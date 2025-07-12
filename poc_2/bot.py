@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from groq import Groq
 import difflib
 
-groq_api_key = st.secrets("GROQ_API")
+groq_api_key = st.secrets["GROQ_API"]
 client = Groq(api_key=groq_api_key)
 
 # Load FAQ from file
